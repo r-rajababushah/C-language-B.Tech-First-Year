@@ -1,11 +1,16 @@
 #include <stdio.h>
+#include <math.h>
 
 void Question1();
+void Question2();
+void Question3();
 
 int main(){
 
     // UNCOMMENT QUESTION TO SEE OUTPUT IN TERMINAL AFTER CODE RUN
-    Question1();
+    // Question1();
+    // Question2();
+    Question3();
 
     return 0;
 }
@@ -30,5 +35,35 @@ void Question1(){
 
 // write a program that calculate the simple intrest and compound intrest, The principle amount, rate of intrest and time are entered through the keybord.
 void Question2(){
-    int 
+
+    int simpleIntrest, compoundIntrest, principleAmount, rateOfIntrest, time; 
+
+    // Getting user input for amount, intrest rate, and time
+    printf("\n Enter principle amount , rate of intrest and time in one line separated by space : ");
+    scanf("%d %d %d", &principleAmount, &rateOfIntrest, &time);
+
+    simpleIntrest = (principleAmount * time * rateOfIntrest)/100;
+
+    compoundIntrest = (principleAmount * pow((1 + rateOfIntrest / 100), time) )- principleAmount;
+
+    printf("\n The Simple Intrest Is: %d", simpleIntrest);
+    printf("\n The Compound Intrest is : %d ", compoundIntrest);
+
+}
+
+// write a program to calcualte the area and circumference of a circle.
+void Question3(){
+    int radius, area, circumference;
+    printf("\n Enter the radius of circle : ");
+    scanf("%d", &radius);
+
+    // area calculation
+    area = 22 / 7 * radius * radius;
+
+    // circumference calculation 
+    circumference = 2 * 22 / 7 * radius;
+
+    // print the area and circumference
+    printf("\n The area of circle is : %d and the circumference of circle is : %d ", area, circumference);
+
 }
