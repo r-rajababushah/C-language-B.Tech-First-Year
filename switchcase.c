@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
     printf("\n Welcome to my calulator \n");
-    printf("\n Enter 1 for addition, Enter 2 for subtraction, Enter 3 for multiplication, Enter 4 for division : ");
+    printf("\n Enter 1 for addition, Enter 2 for substraction, Enter 3 for multiplication, Enter 4 for division : ");
     
     int calcCase;
     int x, y;
