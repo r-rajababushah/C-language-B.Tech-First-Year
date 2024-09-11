@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    printf("\n Welcome to my calulator \n");
+    printf("\n Welcome to my calculator \n");
     printf("\n Enter 1 for addition, Enter 2 for substraction, Enter 3 for multiplication, Enter 4 for division : ");
     
     int calcCase;
